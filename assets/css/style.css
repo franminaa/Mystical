@@ -1,483 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Josefin+Sans:wght@300&family=Merriweather:ital,wght@0,700;1,700&family=Raleway&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Josefin+Sans:wght@300&family=Merriweather:ital,wght@0,700;1,700&family=Raleway&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    padding: 15px 20px;
-    font-size: 20px;
-}
-
-.bars {
-    border: none;
-    font-size: 35px;
-}
-
-.nav-item {
-    text-transform: uppercase;
-}
-
-.logoo {
-    padding-left: 10%;
-    width: 95px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    color: white;
-    background-color: black;
-    font-family: 'Cormorant Garamond', serif;   
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: "Cormorant Garamond", serif;
 }
-
-.jumbotron {
-    margin: 0;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    height: 420px;
-    background-color: black;
-    background-image: url(../img/fondo.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+body header {
+  padding: 15px 20px;
+  font-size: 20px;
 }
-
-.kits {
-    background-image: url(../img/kits.png);
+body header .logoo {
+  padding-left: 10%;
+  width: 95px;
 }
-
-.accesorios {
-    background-image: url(../img/ACCESORIOS.png);
+body header .bars {
+  border: none;
+  font-size: 35px;
 }
-
-.talles {
-    background-image: url(../img/guiadetalles.png);
+body header .nav-item {
+  text-transform: uppercase;
 }
-
-.devoluciones {
-    background-image: url(../img/devoluciones.png);
+body main .jumbotron {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 420px;
+  background-color: black;
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
-.container h1 {
-    font-size: 120px;
+body main .jumbotron .container h1 {
+  font-size: 120px;
 }
-
-.container p {
-    font-size: 45px;
+body main .jumbotron .container p {
+  font-size: 45px;
 }
-
-.titulo {
-    padding: 50px;
-    font-size: 35px;
+body main .kits {
+  background-image: url(../img/kits.png);
 }
-
-article p {
-    padding: 20px;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin: 0;
+body main .accesorios {
+  background-image: url(../img/ACCESORIOS.png);
 }
-
-.beneficios {
-    padding: 100px 50px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+body main .talles {
+  background-image: url(../img/guiadetalles.png);
 }
-
-.icono {
-    font-size: 50px;
-    padding-bottom: 20px;
+body main .devoluciones {
+  background-image: url(../img/devoluciones.png);
 }
-
-.mapa {
-    width: 90%;
+body main article .titulo {
+  padding: 50px;
+  font-size: 35px;
 }
-
-.gallery {
-    display: grid;
-    border-top: solid 3px white;
-    padding: 50px;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,200px);
+body main article .titulo .mapa {
+  width: 90%;
 }
-
-.item {
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    border: solid black 3px;
+body main article .beneficios {
+  padding: 100px 50px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
-
-.item1 {
-    grid-area: item1;
-    background-position: 95% 5%;
-    background-image: url(../img/messi.jpg);
+body main article .beneficios .icono {
+  font-size: 50px;
+  padding-bottom: 20px;
 }
-
-.item2 {
-    grid-area: item2;
-    background-position:  85% 15%;
-    background-image: url(../img/arsenalmodelaje.jpg);
+body main article .beneficios article p {
+  padding: 20px;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 0;
 }
-
-.item3 {
-    grid-area: item3;
-    background-position: 85% 15%;
-    background-image: url(../img/realmadridmodelaje.jpg);
+body main .gallery {
+  display: grid;
+  border-top: solid 3px white;
+  padding: 50px;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 200px);
 }
-
-.item4 {
-    grid-area: item4;
-    background-position: 95% 5%;
-    background-image: url(../img/kean.jpg);
+body main .gallery .item {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: solid black 3px;
 }
-.item5 {
-    grid-area: item5;
-    background-position: 85% 15%;
-    background-image: url(../img/watkins.jpg);
+body main .gallery .item1 {
+  grid-area: item1;
+  background-position: 95% 5%;
+  background-image: url(../img/messi.jpg);
 }
-
-.item6 {
-    grid-area: item6;
-    background-position: 85% 15%;
-    background-image: url(../img/gravenmberch.jpg);
+body main .gallery .item2 {
+  grid-area: item2;
+  background-position: 85% 15%;
+  background-image: url(../img/arsenalmodelaje.jpg);
 }
-
-.liga {
-    display: flex;
-    display: block;
-    width: 150px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 20px 0px 0px 10px;
+body main .gallery .item3 {
+  grid-area: item3;
+  background-position: 85% 15%;
+  background-image: url(../img/realmadridmodelaje.jpg);
 }
-
-.descuentos {
-    width: 110px;
+body main .gallery .item4 {
+  grid-area: item4;
+  background-position: 95% 5%;
+  background-image: url(../img/kean.jpg);
 }
-
-.card {
-    display: flex;
-    display: inline-block;
-    margin: 20px 10px;
-    width: 190px;
-    transition: 0.5s;
+body main .gallery .item5 {
+  grid-area: item5;
+  background-position: 85% 15%;
+  background-image: url(../img/watkins.jpg);
 }
-
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: inset 0px 0px 5px white;
+body main .gallery .item6 {
+  grid-area: item6;
+  background-position: 85% 15%;
+  background-image: url(../img/gravenmberch.jpg);
 }
-
-.card-img-top {
-    padding-top: 10px;
+body main .liga {
+  display: flex;
+  display: block;
+  width: 150px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0px 0px 10px;
 }
-
-.arsenal {
-    background-color: #1d0000;
+body main .card {
+  display: flex;
+  display: inline-block;
+  margin: 20px 10px;
+  width: 190px;
+  transition: 0.5s;
 }
-
-.chelsea {
-    background-color: #02001d;
+body main .card .card-img-top {
+  padding-top: 10px;
 }
-
-.che {
-    width: 151px;
+body main .card .card-body .card p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  padding: 7px;
+  border-top: 1px solid white;
 }
-
-.mancity {
-    background-color: #000e1d;
+body main .card .card-body .compra {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px 30px;
+  border: solid white;
 }
-
-.manunt {
-    background-color: #130000;
+body main .card .card-body .compra:hover {
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  transition: 0.5s;
 }
-
-.tott {
-    background-color: #141414;
+body main .card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: inset 0px 0px 5px white;
 }
-
-.astv {
-    background-color: #1b0000;
+body main .arsenal, body main .manunt, body main .astv, body main .atlmadrid {
+  background-color: rgb(19, 0, 0);
 }
-
-.realbetis {
-    background-color: #001801;
+body main .chelsea, body main .realsociedad, body main .barsa, body main .inter {
+  background-color: rgb(0, 0, 41);
 }
-
-.bet {
-    width: 180px;
+body main .che {
+  width: 151px;
 }
-
-.realsociedad {
-    background-color: #000f2e;
+body main .interimagen {
+  width: 217px;
 }
-
-.villareal {
-    background-color: #1d1d00;
+body main .tott, body main .realmadrid {
+  background-color: rgb(14, 14, 14);
 }
-
-.villa {
-    width: 160px;
+body main .realbetis, body main .ajaxvieja {
+  background-color: rgb(0, 20, 0);
 }
-
-.atlmadrid {
-    background-color: #1d0000;
+body main .bet {
+  width: 180px;
 }
-
-.realmadrid {
-    background-color: #1b1b1b;
+body main .villareal {
+  background-color: rgb(19, 19, 0);
 }
-
-.real {
-    width: 189px;
+body main .villa {
+  width: 160px;
 }
-
-.barsa {
-    background-color: #010014;
+body main .realmadridvieja {
+  background-color: #15001d;
 }
-
-.card p {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 18px;    
-    padding: 7px;
+body main .mancity {
+  background-color: #000e1d;
 }
-
-.inter {
-    background-color: #000e1d;
+body footer {
+  font-size: 20px;
+  padding: 15px;
+  border-top-style: solid;
 }
-
-.interimagen {
-    width: 217px;
+body footer .redes {
+  color: white;
+  font-size: 27px;
+  padding: 4px;
 }
-
-.ajaxvieja {
-    background-color: #001101;
-}
-
-.realmadridvieja {
-    background-color: #15001d;
-}
-
-.card-body a {
-    color: white;
-    text-decoration: none;
-}
-
-.card-text {
-    border-top: 1px solid white;
-}
-
-.compra {
-    margin: 5px;
-    padding: 5px 30px;
-    border: solid white;
-}
-
-.compra:hover {
-    font-weight: bold;
-    color: black;
-    background-color: white;
-    transition: 0.5s;
-}
-
-.formulario {
-    text-align: center;
-    font-size: 20px;
-    padding: 50px 300px;
-}
-
-.redes {
-    color: white;
-    font-size: 27px;
-    padding: 4px; 
-}
-
-footer {
-    font-size: 20px;
-    padding: 15px;
-    border-top-style: solid;
-}
-
-footer .redes:hover {
-    color: #333;
-}
-
-@media only screen and (min-width: 320px){
-    .logoo {
-        width: 60px;
-    }
-
-    .jumbotron {
-        height: 300px;
-    }
-
-    .container h1 {
-        font-size: 45px;
-    }
-
-    .container p{
-        font-size: 25px;
-    }
-
-    .beneficios {
-        padding: 20px 15px;
-    }
-
-
-    .row p, .titulo p {
-        font-size: 20px;
-    }
-
-    .icono {
-        font-size: 35px;
-    }
-
-    .titulo {
-        font-size: 22px;
-        padding: 20px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        grid-template-areas: 
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6";
-    }
-
-    footer h4 {
-        font-size: 20px;
-    }
-
-}
-
-@media only screen and (min-width: 442px) {
-    .container h1 {
-        font-size: 50px;
-    }
-
-    .container p{
-        font-size: 30px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        grid-template-areas: 
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6";
-    }
-}
-
-@media only screen and (min-width: 480px){
-    .container h1 {
-        font-size: 57px;
-    }
-
-    .titulo {
-        font-size: 25px;
-    }
-
-    .row p, .titulo p {
-        font-size: 24px;
-    }
-
-    .icono {
-        font-size: 40px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
-        grid-template-areas: 
-        "item1 item2"
-        "item3 item4"
-        "item5 item6";
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    .titulo {
-        font-size: 28px;
-    }
-
-    .icono {
-        padding-bottom: 0px;
-    }
-
-    footer h4{
-        font-size: 26px;
-    }
-
-}
-
-@media only screen and (min-width: 768px) {
-    .container h1 {
-        font-size: 70px;
-    }
-    
-    .container p {
-        font-size: 35px;
-    }
-
-    .info {
-        padding: 35px;
-    }
-
-    .titulo {
-        font-size: 34px;
-    }
-
-    .row p, .titulo p {
-        font-size: 28px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
-        grid-template-areas: 
-        "item1 item2 item2"
-        "item3 item3 item4"
-        "item5 item6 item6";
-    }
-
-    footer h4 {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .container h1 {
-        font-size: 85px;
-    }
-
-    .container p {
-        font-size: 40px;
-    }
-
-    .info {
-        padding: 50px;
-    }
-
-    .beneficios {
-        padding: 100px 80px;
-    }
-}
+body footer .redes:hover {
+  color: #333;
+}/*# sourceMappingURL=style.css.map */

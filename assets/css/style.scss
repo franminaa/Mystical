@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Josefin+Sans:wght@300&family=Merriweather:ital,wght@0,700;1,700&family=Raleway&display=swap');
+
+$font1:'Cormorant Garamond', serif;
+$color1: rgb(19, 0, 0);
+$color2: rgb(0, 0, 41);
+$color3: rgb(14, 14, 14);
+$color4: rgb(0, 20, 0);
+$color5: rgb(19, 19, 0);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: $font1;
+    
+    header {
+        padding: 15px 20px;
+        font-size: 20px;
+    
+        .logoo {
+            padding-left: 10%;
+            width: 95px;
+        }
+    
+        .bars {
+            border: none;
+            font-size: 35px;
+        }
+        
+        .nav-item {
+            text-transform: uppercase;
+        }
+    }
+
+    main {
+        .jumbotron {
+            margin: 0;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: 420px;
+            background-color: black;
+            background-image: url(../img/fondo.png);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+            .container h1 {
+                font-size: 120px;
+            }
+            
+            .container p {
+                font-size: 45px;
+            }
+        }
+
+        .kits {
+            background-image: url(../img/kits.png);
+        }
+        
+        .accesorios {
+            background-image: url(../img/ACCESORIOS.png);
+        }
+        
+        .talles {
+            background-image: url(../img/guiadetalles.png);
+        }
+        
+        .devoluciones {
+            background-image: url(../img/devoluciones.png);
+        }
+        
+        article {
+            .titulo {
+                padding: 50px;
+                font-size: 35px;
+                
+                .mapa {
+                    width: 90%;
+                }
+            }
+
+            .beneficios {
+                padding: 100px 50px;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+                
+                .icono {
+                    font-size: 50px;
+                    padding-bottom: 20px;
+                }
+
+                article p {
+                    padding: 20px;
+                    font-size: 25px;
+                    text-transform: capitalize;
+                    margin: 0;
+                }
+            }
+        }
+        .gallery {
+            display: grid;
+            border-top: solid 3px white;
+            padding: 50px;
+            width: 100%;
+            height: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,200px);
+
+            .item {
+                background-color: black;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                border: solid black 3px;
+            }
+            
+            .item1 {
+                grid-area: item1;
+                background-position: 95% 5%;
+                background-image: url(../img/messi.jpg);
+            }
+            
+            .item2 {
+                grid-area: item2;
+                background-position:  85% 15%;
+                background-image: url(../img/arsenalmodelaje.jpg);
+            }
+            
+            .item3 {
+                grid-area: item3;
+                background-position: 85% 15%;
+                background-image: url(../img/realmadridmodelaje.jpg);
+            }
+            
+            .item4 {
+                grid-area: item4;
+                background-position: 95% 5%;
+                background-image: url(../img/kean.jpg);
+            }
+            .item5 {
+                grid-area: item5;
+                background-position: 85% 15%;
+                background-image: url(../img/watkins.jpg);
+            }
+            
+            .item6 {
+                grid-area: item6;
+                background-position: 85% 15%;
+                background-image: url(../img/gravenmberch.jpg);
+            }
+        }
+
+        .liga {
+            display: flex;
+            display: block;
+            width: 150px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0px 0px 10px;
+        }
+
+        .card {
+            display: flex;
+            display: inline-block;
+            margin: 20px 10px;
+            width: 190px;
+            transition: 0.5s;
+
+            .card-img-top {
+                padding-top: 10px;
+            }
+
+            .card-body {
+                .card p {
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 18px;    
+                    padding: 7px;
+                    border-top: 1px solid white;
+                }
+
+                .compra {
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                    padding: 5px 30px;
+                    border: solid white;
+                }
+
+                .compra:hover {
+                    font-weight: bold;
+                    color: black;
+                    background-color: white;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+            box-shadow: inset 0px 0px 5px white;
+        }
+        .arsenal, .manunt, .astv, .atlmadrid {
+            background-color: $color1;
+        }
+        .chelsea, .realsociedad, .barsa, .inter {
+            background-color: $color2;
+        }
+        .che {
+            width: 151px;
+        }
+        .interimagen {
+            width: 217px;
+        }
+        .tott, .realmadrid {
+            background-color: $color3;
+        }
+        .realbetis, .ajaxvieja {
+            background-color: $color4;
+        }
+        .bet {
+            width: 180px;
+        }
+        .villareal {
+            background-color: $color5;
+        }
+        .villa {
+            width: 160px;
+        }
+        .realmadridvieja {
+            background-color: #15001d;
+        }
+        .mancity{
+            background-color: #000e1d;
+        }
+    }
+    footer {
+        font-size: 20px;
+        padding: 15px;
+        border-top-style: solid;
+
+        .redes {
+            color: white;
+            font-size: 27px;
+            padding: 4px; 
+        }
+        
+        .redes:hover {
+            color: #333;
+        }
+    }
+}
