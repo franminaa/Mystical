@@ -222,7 +222,7 @@ body main .guia {
 body main .guiadetalles {
   margin: 30px;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(224, 224, 224);
   color: black;
   font-size: 30px;
   font-weight: bold;
@@ -230,6 +230,13 @@ body main .guiadetalles {
 }
 body main .guiadetalles .guiaitem {
   padding: 10px;
+}
+body main .dev {
+  padding: 70px;
+  font-size: 45px;
+}
+body main .formulario {
+  font-size: 25px;
 }
 body footer {
   font-size: 20px;
@@ -243,4 +250,16 @@ body footer .redes {
 }
 body footer .redes:hover {
   color: #333;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body header nav .logoo {
+    width: 60px;
+  }
+  body main .jumbotron .container h1 {
+    font-size: 45px;
+  }
+  body main .jumbotron .container p {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
