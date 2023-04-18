@@ -72,9 +72,9 @@ body main article .beneficios .icono {
   font-size: 50px;
   padding-bottom: 20px;
 }
-body main article .beneficios .beneficios .row p {
+body main article .beneficios .row {
   padding: 20px;
-  font-size: 415px;
+  font-size: 25px;
   text-transform: capitalize;
   margin: 0;
 }
@@ -84,8 +84,9 @@ body main .gallery {
   padding: 50px;
   width: 100%;
   height: auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 200px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas: "item1 item2 item2" "item3 item3 item4" "item5 item5 item6";
 }
 body main .gallery .item {
   background-color: black;
@@ -94,34 +95,31 @@ body main .gallery .item {
   border-radius: 10px;
   border: solid black 3px;
 }
-body main .gallery .item1 {
+body main .gallery .item1, body main .gallery .item4 {
   grid-area: item1;
   background-position: 95% 5%;
   background-image: url(../img/messi.jpg);
 }
-body main .gallery .item2 {
+body main .gallery .item2, body main .gallery .item6, body main .gallery .item3 {
   grid-area: item2;
   background-position: 85% 15%;
   background-image: url(../img/arsenalmodelaje.jpg);
 }
 body main .gallery .item3 {
   grid-area: item3;
-  background-position: 85% 15%;
   background-image: url(../img/realmadridmodelaje.jpg);
 }
 body main .gallery .item4 {
   grid-area: item4;
-  background-position: 95% 5%;
   background-image: url(../img/kean.jpg);
 }
 body main .gallery .item5 {
   grid-area: item5;
-  background-position: 85% 15%;
+  background-position: 50%;
   background-image: url(../img/watkins.jpg);
 }
 body main .gallery .item6 {
   grid-area: item6;
-  background-position: 85% 15%;
   background-image: url(../img/gravenmberch.jpg);
 }
 body main .liga {
@@ -214,6 +212,24 @@ body main .mancity {
 }
 body main .puma {
   background-color: #220008;
+}
+body main .guia {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 20px;
+}
+body main .guiadetalles {
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+body main .guiadetalles .guiaitem {
+  padding: 10px;
 }
 body footer {
   font-size: 20px;

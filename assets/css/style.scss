@@ -96,9 +96,9 @@ body {
                     padding-bottom: 20px;
                 }
 
-                .beneficios .row p {
+                .row {
                     padding: 20px;
-                    font-size: 415px;
+                    font-size: 25px;
                     text-transform: capitalize;
                     margin: 0;
                 }
@@ -110,8 +110,12 @@ body {
             padding: 50px;
             width: 100%;
             height: auto;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6,200px);
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,200px);
+            grid-template-areas: 
+            "item1 item2 item2"
+            "item3 item3 item4"
+            "item5 item5 item6";
 
             .item {
                 background-color: black;
@@ -134,25 +138,25 @@ body {
             }
             
             .item3 {
+                @extend .item2;
                 grid-area: item3;
-                background-position: 85% 15%;
                 background-image: url(../img/realmadridmodelaje.jpg);
             }
             
             .item4 {
+                @extend .item1;
                 grid-area: item4;
-                background-position: 95% 5%;
                 background-image: url(../img/kean.jpg);
             }
             .item5 {
                 grid-area: item5;
-                background-position: 85% 15%;
+                background-position: 50%;
                 background-image: url(../img/watkins.jpg);
             }
             
             .item6 {
+                @extend .item2;
                 grid-area: item6;
-                background-position: 85% 15%;
                 background-image: url(../img/gravenmberch.jpg);
             }
         }
@@ -256,6 +260,26 @@ body {
         }
         .puma {
             background-color: #220008;
+        }
+
+        .guia {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .guiadetalles {
+            margin: 30px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+
+            .guiaitem {
+                padding: 10px;
+            }
         }
     }
     footer {
