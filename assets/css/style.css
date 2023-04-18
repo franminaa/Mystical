@@ -72,9 +72,9 @@ body main article .beneficios .icono {
   font-size: 50px;
   padding-bottom: 20px;
 }
-body main article .beneficios article p {
+body main article .beneficios .beneficios .row p {
   padding: 20px;
-  font-size: 25px;
+  font-size: 415px;
   text-transform: capitalize;
   margin: 0;
 }
@@ -125,13 +125,21 @@ body main .gallery .item6 {
   background-image: url(../img/gravenmberch.jpg);
 }
 body main .liga {
+  color: black;
   display: flex;
   display: block;
-  width: 150px;
+  width: 180px;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
   margin: 20px 0px 0px 10px;
+  font-weight: bold;
+}
+body main .descuentos {
+  width: 140px;
+}
+body main .entrenamiento {
+  width: 300px;
 }
 body main .card {
   display: flex;
@@ -142,6 +150,9 @@ body main .card {
 }
 body main .card .card-img-top {
   padding-top: 10px;
+}
+body main .card .card-body .card-title {
+  font-size: 25px;
 }
 body main .card .card-body .card p {
   text-transform: uppercase;
@@ -168,10 +179,10 @@ body main .card:hover {
   transition: 0.5s;
   box-shadow: inset 0px 0px 5px white;
 }
-body main .arsenal, body main .manunt, body main .astv, body main .atlmadrid {
+body main .rojo {
   background-color: rgb(19, 0, 0);
 }
-body main .chelsea, body main .realsociedad, body main .barsa, body main .inter {
+body main .azul {
   background-color: rgb(0, 0, 41);
 }
 body main .che {
@@ -180,16 +191,16 @@ body main .che {
 body main .interimagen {
   width: 217px;
 }
-body main .tott, body main .realmadrid {
+body main .gris {
   background-color: rgb(14, 14, 14);
 }
-body main .realbetis, body main .ajaxvieja {
+body main .verde {
   background-color: rgb(0, 20, 0);
 }
 body main .bet {
   width: 180px;
 }
-body main .villareal {
+body main .amarillo {
   background-color: rgb(19, 19, 0);
 }
 body main .villa {
@@ -200,6 +211,9 @@ body main .realmadridvieja {
 }
 body main .mancity {
   background-color: #000e1d;
+}
+body main .puma {
+  background-color: #220008;
 }
 body footer {
   font-size: 20px;

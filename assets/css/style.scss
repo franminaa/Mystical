@@ -96,9 +96,9 @@ body {
                     padding-bottom: 20px;
                 }
 
-                article p {
+                .beneficios .row p {
                     padding: 20px;
-                    font-size: 25px;
+                    font-size: 415px;
                     text-transform: capitalize;
                     margin: 0;
                 }
@@ -158,13 +158,23 @@ body {
         }
 
         .liga {
+            color: black;
             display: flex;
             display: block;
-            width: 150px;
+            width: 180px;
             background-color: white;
             padding: 10px;
             border-radius: 5px;
             margin: 20px 0px 0px 10px;
+            font-weight: bold;
+        }
+
+        .descuentos {
+            width: 140px;
+        }
+
+        .entrenamiento {
+            width: 300px;
         }
 
         .card {
@@ -179,6 +189,9 @@ body {
             }
 
             .card-body {
+                .card-title {
+                    font-size: 25px;
+                }
                 .card p {
                     text-transform: uppercase;
                     text-align: center;
@@ -208,10 +221,10 @@ body {
             transition: 0.5s;
             box-shadow: inset 0px 0px 5px white;
         }
-        .arsenal, .manunt, .astv, .atlmadrid {
+        .rojo {
             background-color: $color1;
         }
-        .chelsea, .realsociedad, .barsa, .inter {
+        .azul {
             background-color: $color2;
         }
         .che {
@@ -220,16 +233,16 @@ body {
         .interimagen {
             width: 217px;
         }
-        .tott, .realmadrid {
+        .gris {
             background-color: $color3;
         }
-        .realbetis, .ajaxvieja {
+        .verde {
             background-color: $color4;
         }
         .bet {
             width: 180px;
         }
-        .villareal {
+        .amarillo {
             background-color: $color5;
         }
         .villa {
@@ -240,6 +253,9 @@ body {
         }
         .mancity{
             background-color: #000e1d;
+        }
+        .puma {
+            background-color: #220008;
         }
     }
     footer {
