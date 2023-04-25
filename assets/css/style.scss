@@ -188,7 +188,7 @@ body {
         .card {
             display: flex;
             display: inline-block;
-            margin: 20px 10px;
+            margin: 25px 10px 50px 10px;
             width: 190px;
             transition: 0.5s;
 
@@ -288,7 +288,7 @@ body {
         }
 
         .guiadetalles {
-            margin: 10px;
+            margin-bottom: 50px;
             background-color: rgb(224, 224, 224);
             color: black;
             font-size: 30px;
@@ -302,7 +302,7 @@ body {
 
         .dev {
             padding: 70px;
-            font-size: 45px;
+            font-size: 40px;
             border-bottom: 5px white;
         }
 
@@ -356,7 +356,6 @@ body {
                 color: rgb(156, 156, 156);
                 text-decoration: none;
             }
-
         }
     }
 }
@@ -445,7 +444,7 @@ footer {
 
             section {
                 h2 .liga {
-                    width: 120px;
+                    width: 135px;
                 }
 
                 h2 {
@@ -487,6 +486,183 @@ footer {
         footer a .redes,
         h3 {
             font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        header {
+            .logoo {
+                width: 70px;
+            }
+        }
+
+        main {
+            .jumbotron {
+                height: 380px;
+            }
+
+            .jumbotron .container {
+                h1 {
+                    font-size: 70px;
+                }
+
+                .devo {
+                    font-size: 55px;
+                }
+
+                p {
+                    font-size: 35px;
+                }
+            }
+
+            article {
+                .titulo {
+                    padding: 50px 35px;
+                    font-size: 30px;
+
+                    p {
+                        padding: 20px;
+                    }
+                }
+
+                .beneficios {
+                    padding: 50px 35px;
+
+                    .row {
+                        font-size: 30px;
+
+                        i {
+                            padding-top: 20px;
+                            font-size: 45px;
+                        }
+                    }
+                }
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3, 200px);
+                grid-template-areas:
+                    "item1 item2"
+                    "item3 item4"
+                    "item5 item6";
+
+                .item2 {
+                    background-position: center;
+                }
+            }
+
+            section {
+                h2 .liga {
+                    width: 150px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+            .guia {
+                font-size: 35px;
+            }
+
+            .container .guiadetalles {
+                text-transform: lowercase;
+                font-size: 19px;
+                font-weight: none;
+            }
+
+            .dev {
+                font-size: 30px;
+                padding: 20px;
+            }
+
+            .formulario {
+                margin: 0px 10px;
+                padding: 20px;
+                font-size: 22px;
+
+                h2 {
+                    font-size: 25px;
+                }
+
+                input {
+                    font-size: 25px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        header {
+            .logoo {
+                width: 80px;
+            }
+        }
+
+        main {
+            .jumbotron {
+                height: 400px;
+            }
+
+            .jumbotron .container {
+                h1 {
+                    font-size: 90px;
+                }
+
+                .devo {
+                    font-size: 75px;
+                }
+
+                p {
+                    font-size: 40px;
+                }
+            }
+
+            article {
+                .titulo {
+                    font-size: 30px;
+                }
+
+                .beneficios {
+                    padding: 55px 20px;
+                }
+            }
+
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 200px);
+                grid-template-areas:
+                    "item1 item2 item2"
+                    "item3 item3 item4"
+                    "item5 item6 item6";
+            }
+
+            .container .guiadetalles {
+                text-transform: lowercase;
+                font-size: 28px;
+                font-weight: none;
+            }
+
+            .formulario {
+                margin: 0px 70px;
+                padding: 20px;
+                font-size: 28px;
+
+                h2 {
+                    font-size: 25px;
+                }
+
+                input {
+                    font-size: 25px;
+                    height: 40px;
+                }
+            }
         }
     }
 }
