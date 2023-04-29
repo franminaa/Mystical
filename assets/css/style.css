@@ -26,7 +26,7 @@ body header .bars {
 body header .nav-item {
   text-transform: uppercase;
 }
-body main .jumbotron {
+body main .jumbo {
   margin: 0;
   display: flex;
   text-align: center;
@@ -38,10 +38,10 @@ body main .jumbotron {
   background-size: cover;
   background-attachment: fixed;
 }
-body main .jumbotron .container h1 {
+body main .jumbo .container h1 {
   font-size: 120px;
 }
-body main .jumbotron .container p {
+body main .jumbo .container p {
   font-size: 45px;
 }
 body main .kits {
@@ -78,15 +78,49 @@ body main article .beneficios .row {
   text-transform: capitalize;
   margin: 0;
 }
+body main .newsletter {
+  height: auto;
+  font-size: 35px;
+  background-color: #b1b1b1;
+  background-image: linear-gradient(180deg, #b1b1b1 0%, #ededed 100%);
+  background-image: url(../img/descarga.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+}
+body main .newsletter h2 {
+  font-size: 45px;
+}
+body main .newsletter .botonenviar, body main .newsletter input {
+  padding: 5px 25px;
+  display: flex;
+  display: inline-block;
+  background-image: linear-gradient(to right, #000000 0%, #161616 51%, #000000 100%);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+}
+body main .newsletter .botonenviar:hover, body main .newsletter input:hover {
+  background-position: right center;
+  color: rgb(156, 156, 156);
+  text-decoration: none;
+}
+body main .newsletter input {
+  text-transform: initial;
+}
 body main .gallery {
   display: grid;
-  border-top: solid 3px white;
   padding: 50px;
   width: 100%;
   height: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 200px);
-  grid-template-areas: "item1 item2 item2" "item3 item3 item4" "item5 item5 item6";
+  grid-template-areas: "item1 item2 item2" "item3 item3 item4" "item5 item6 item6";
 }
 body main .gallery .item {
   background-color: black;
@@ -96,22 +130,24 @@ body main .gallery .item {
   border-radius: 10px;
   border: solid black 3px;
 }
-body main .gallery .item1, body main .gallery .item4 {
+body main .gallery .item1 {
   grid-area: item1;
   background-position: 95% 5%;
   background-image: url(../img/messi.jpg);
 }
-body main .gallery .item2, body main .gallery .item6, body main .gallery .item3 {
+body main .gallery .item2 {
   grid-area: item2;
   background-position: 85% 15%;
   background-image: url(../img/arsenalmodelaje.jpg);
 }
 body main .gallery .item3 {
   grid-area: item3;
+  background-position: 85% 15%;
   background-image: url(../img/realmadridmodelaje.jpg);
 }
 body main .gallery .item4 {
   grid-area: item4;
+  background-position: 95% 5%;
   background-image: url(../img/kean.jpg);
 }
 body main .gallery .item5 {
@@ -121,6 +157,7 @@ body main .gallery .item5 {
 }
 body main .gallery .item6 {
   grid-area: item6;
+  background-position: 85% 15%;
   background-image: url(../img/gravenmberch.jpg);
 }
 body main .liga {
@@ -264,7 +301,8 @@ body main .formulario label {
   display: flex;
   display: block;
 }
-body main .formulario .btn-grad {
+body main .formulario .botonenviar, body main .formulario .newsletter input, body main .newsletter .formulario input {
+  padding: 5px 25px;
   display: flex;
   display: inline-block;
   background-image: linear-gradient(to right, #000000 0%, #161616 51%, #000000 100%);
@@ -278,7 +316,6 @@ body main .formulario .btn-grad {
 }
 body main .formulario .btn-grad:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: rgb(156, 156, 156);
   text-decoration: none;
 }
@@ -329,12 +366,29 @@ footer .redes:hover {
   body main article .beneficios .row i {
     font-size: 40px;
   }
+  body main .newsletter {
+    height: auto;
+  }
+  body main .newsletter h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  body main .newsletter label {
+    font-size: 25px;
+  }
+  body main .newsletter input {
+    font-size: 20px;
+  }
+  body main .newsletter .btn-grad {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
   body main .gallery {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 200px);
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
   }
-  body main .gallery .item2, body main .gallery .item3, body main .gallery .item6 {
+  body main .gallery .item2 {
     background-position: center;
   }
   body main section h2 .liga {
@@ -405,12 +459,27 @@ footer .redes:hover {
     padding-top: 20px;
     font-size: 45px;
   }
+  body main .newsletter {
+    height: auto;
+  }
+  body main .newsletter h2 {
+    font-size: 40px;
+  }
+  body main .newsletter label {
+    font-size: 30px;
+  }
+  body main .newsletter input {
+    font-size: 25px;
+  }
+  body main .newsletter .btn-grad {
+    font-size: 20px;
+  }
   body main .gallery {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 200px);
     grid-template-areas: "item1 item2" "item3 item4" "item5 item6";
   }
-  body main .gallery .item2, body main .gallery .item3, body main .gallery .item6 {
+  body main .gallery .item2 {
     background-position: center;
   }
   body main section h2 .liga {
@@ -465,6 +534,15 @@ footer .redes:hover {
   }
   body main article .beneficios {
     padding: 55px 20px;
+  }
+  body main .newsletter {
+    height: auto;
+  }
+  body main .newsletter h2 {
+    font-size: 45px;
+  }
+  body main .newsletter label {
+    font-size: 30px;
   }
   body main .gallery {
     grid-template-columns: repeat(3, 1fr);
